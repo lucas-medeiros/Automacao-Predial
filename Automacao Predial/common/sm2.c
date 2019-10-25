@@ -38,5 +38,4 @@ STATE(sm2_parado){
     if(!s21() && s11() && chronoIsFinished(&sm2_chronoFast))
         NEXT_STATE(sm2_enchendo);
 }
-
 //mudança 1
