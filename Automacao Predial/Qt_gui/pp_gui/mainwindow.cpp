@@ -7,7 +7,7 @@ float nivel_cano1 = 0;
 float nivel_cano2 = 0;
 float nivel_cano3 = 0;
 
-float vazao_canos = 5;
+float vazao_canos = 6;
 
 float vazao_v1 = 0.15;
 float vazao_b1 = 0.15;

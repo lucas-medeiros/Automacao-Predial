@@ -1,9 +1,7 @@
 #include "sm1.h"
 #include "hal.h"
-#include "chronometer.h"
 
 StateMachine sm1;
-chronometer sm1_chrono;
 
 STATE(sm1_init){
     if(JUST_ARRIVED)
@@ -26,9 +24,9 @@ STATE(sm1_enchendo){
 STATE(sm1_parado){
     if(JUST_ARRIVED){
         v1(FALSE);
-        chronoStart(&sm1_chrono,3000);
+        CHRONO_START(3000);
     }
 
-    if(!s12() && chronoIsFinished(&sm1_chrono))
+    if(!s12() && CHORNO_ISFINISHED())
         NEXT_STATE(sm1_enchendo);
 }
