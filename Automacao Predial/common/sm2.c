@@ -3,7 +3,7 @@
 #include "chronometer.h"
 
 StateMachine sm2;
-chronometer sm2_chrono, sm2_chronoFast;
+chronometer sm2_chronoFast;
 
 uint32 timer = 3000; //temporização
 
@@ -28,11 +28,11 @@ STATE(sm2_enchendo){
 STATE(sm2_parado){
     if(JUST_ARRIVED){
         b1(FALSE);
-        chronoStart(&sm2_chrono, 3000);
-        chronoStart(&sm2_chronoFast, 3000/2);
+        CHRONO_START(timer);
+        chronoStart(&sm2_chronoFast, timer/2);
     }
 
-    if(s11() && !s22() && chronoIsFinished(&sm2_chrono))
+    if(s11() && !s22() && CHORNO_ISFINISHED())
         NEXT_STATE(sm2_enchendo);
 
     if(!s21() && s11() && chronoIsFinished(&sm2_chronoFast))
