@@ -23,5 +23,4 @@ typedef struct{
 #define CHRONO_START(t)         _sm_->c = Now()+t
 #define CHORNO_ISFINISHED()     (Now() >= _sm_->c)
 
-
 #endif // SM_H
