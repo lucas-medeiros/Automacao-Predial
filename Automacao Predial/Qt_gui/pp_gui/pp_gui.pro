@@ -32,7 +32,8 @@ SOURCES += \
     hal.c \
     threadbehavior.cpp \
     ../../common/chronometer.c \
-    ../../common/sm1.c
+    ../../common/sm1.c \
+    ../../common/sm4.c
     
 HEADERS += \
     ../../common/sm2.h \
@@ -44,7 +45,8 @@ HEADERS += \
     threadbehavior.h \
     ../../common/chronometer.h \
     ../../common/sm.h \
-    ../../common/sm1.h
+    ../../common/sm1.h \
+    ../../common/sm4.h
 
 FORMS += \
         mainwindow.ui

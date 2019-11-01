@@ -1,22 +1,26 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+//Variéveis de encanamento:
+double nivel_cano1 = 0;
+double nivel_cano2 = 0;
+double nivel_cano3 = 0;
+double vazao_canos = 8;
+
+//Variáveis dos tanques:
 double nivel_tanque1 = 0;
 double nivel_tanque2 = 0;
 double nivel_tanque3 = 0;
 double temperatura_tanque3 = 25.0;
 
-double nivel_cano1 = 0;
-double nivel_cano2 = 0;
-double nivel_cano3 = 0;
-
-double vazao_canos = 6;
-
+//Variáveis das válvulas e bombas:
 double vazao_v1 = 0.15;
 double vazao_b1 = 0.15;
 double vazao_v2 = 0.15;
+double dT = 0.01; //variação da temperatura
+
+//Variável de consumo:
 double consumo = 0.06;
-double dT = 0.5; //variação da temperatura
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -60,6 +64,7 @@ void MainWindow::AtualizaInterface(){
     ui->checkBox_v1->setChecked(pin_v1);
     ui->checkBox_b1->setChecked(pin_b1);
     ui->checkBox_v2->setChecked(pin_v2);
+    ui->checkBox_r1->setChecked(pin_r1);
 
     ui->checkBox_s11->setChecked(pin_s11);
     ui->checkBox_s12->setChecked(pin_s12);
@@ -75,8 +80,7 @@ void MainWindow::AtualizaInterface(){
     ui->progressBar_cano2->setValue(nivel_cano2);
     ui->progressBar_cano3->setValue(nivel_cano3);
 
-    ui->label_temperatura->setNum(temperaturaTanque3);
-    //ui->label_temperatura->setText(temperaturaTanque3.toString() + "ºC" ) sdds Java
+    ui->label_temperatura->setText(QString::number(temperatura_tanque3));
 }
 
 void MainWindow::ProcessoFisico(){
@@ -108,6 +112,8 @@ void MainWindow::ProcessoFisico(){
     }
 
     if(pin_v2==TRUE){
+        //água passa do tanque que tem mais água para o tanque que tem menos
+        //volume do tanque2 = 4 * volume do tanque3
         if(nivel_tanque2 > nivel_tanque3){
             nivel_tanque2 -= vazao_v2/4;
             nivel_tanque3 += vazao_v2*4;
@@ -117,14 +123,15 @@ void MainWindow::ProcessoFisico(){
         }
     }
 
-    if(pin_r1==TRUE){
-        temperatura_tanque3 += dT;
+    if(pin_r1==TRUE){ //aumenta a temperatura da água no tanque3
+        temperatura_tanque3 += dT; //dT -> variação da temperatura
     } else {
         if(temperatura_tanque3 > 25)
             temperatura_tanque3 -= dT;
     }
 
     //consumo:
+    nivel_tanque2 -= consumo;
     nivel_tanque3 -= consumo;
 
 
@@ -141,6 +148,10 @@ void MainWindow::ProcessoFisico(){
         nivel_tanque3=100;
     if(nivel_tanque3<0)
         nivel_tanque3 = 0;
+
+    //controle de fidelidade de temperatura ambiente
+    if(temperatura_tanque3 < 25)
+        temperatura_tanque3 = 25;
 
     //controle de fidelidade para encanamento
     if(nivel_cano1>100)
