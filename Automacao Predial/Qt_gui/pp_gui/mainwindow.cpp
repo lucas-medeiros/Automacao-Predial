@@ -82,8 +82,8 @@ void MainWindow::AtualizaInterface(){
 
     ui->label_temperatura->setText(QString::number(temperatura_tanque3));
 
-    ui->label_niveltanque2->setText(QString::number(nivel_tanque2));
-    ui->label_niveltanque3->setText(QString::number(nivel_tanque3));
+    //ui->label_niveltanque2->setText(QString::number(nivel_tanque2));
+    //ui->label_niveltanque3->setText(QString::number(nivel_tanque3));
 }
 
 void MainWindow::ProcessoFisico(){
@@ -148,8 +148,8 @@ void MainWindow::ProcessoFisico(){
         nivel_tanque2=100;
     if(nivel_tanque2<0)
         nivel_tanque2 = 0;
-    if(nivel_tanque3>100)
-        nivel_tanque3=100;
+    if(nivel_tanque3>25)
+        nivel_tanque3=25;
     if(nivel_tanque3<0)
         nivel_tanque3 = 0;
 

@@ -125,7 +125,7 @@
      <rect>
       <x>400</x>
       <y>160</y>
-      <width>111</width>
+      <width>101</width>
       <height>23</height>
      </rect>
     </property>
@@ -185,9 +185,9 @@
     <property name="geometry">
      <rect>
       <x>830</x>
-      <y>270</y>
-      <width>101</width>
-      <height>111</height>
+      <y>280</y>
+      <width>91</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="maximum">
@@ -291,7 +291,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="label_niveltanque3">
@@ -304,7 +304,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
   </widget>
@@ -314,7 +314,7 @@
      <x>0</x>
      <y>0</y>
      <width>1215</width>
-     <height>21</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>
