@@ -5,16 +5,16 @@
 double nivel_cano1 = 0;
 double nivel_cano2 = 0;
 double nivel_cano3 = 0;
-double vazao_canos = 8;
+double vazao_canos = 9;
 
 //Variáveis dos tanques:
 double nivel_tanque1 = 0;
-double nivel_tanque2 = 50;
+double nivel_tanque2 = 100;
 double nivel_tanque3 = 0*0.25;
 double temperatura_tanque3 = 25.0;
 
 //Variáveis das válvulas e bombas:
-double vazao_v1 = 0.15;
+double vazao_v1 = 0.0;
 double vazao_b1 = 0.0;
 double vazao_v2 = 0.15;
 double dT = 0.01; //variação da temperatura
@@ -82,8 +82,8 @@ void MainWindow::AtualizaInterface(){
 
     ui->label_temperatura->setText(QString::number(temperatura_tanque3));
 
-    //ui->label_niveltanque2->setText(QString::number(nivel_tanque2));
-    //ui->label_niveltanque3->setText(QString::number(nivel_tanque3));
+    ui->label_niveltanque2->setText(QString::number(nivel_tanque2));
+    ui->label_niveltanque3->setText(QString::number(nivel_tanque3));
 }
 
 void MainWindow::ProcessoFisico(){
@@ -99,7 +99,7 @@ void MainWindow::ProcessoFisico(){
         nivel_cano1 += vazao_canos;
         if(nivel_cano1>=100){
             nivel_cano2 += vazao_canos;
-            if(nivel_cano2>=100){
+            if(nivel_cano2>=99){
                 nivel_cano3 += vazao_canos;
             }
         }
@@ -136,7 +136,7 @@ void MainWindow::ProcessoFisico(){
 
     //consumo:
     nivel_tanque2 -= consumo;
-    nivel_tanque3 -= consumo;
+    nivel_tanque3 -= consumo*0.25;
 
 
     //controle de fidelidade do tamanho do tanque
