@@ -246,7 +246,7 @@ release/moc_mainwindow.cpp: ../pp_gui/mainwindow.h \
 		C:/Qt/5.13.1/mingw73_32/include/QtCore/qbasictimer.h \
 		release/moc_predefs.h \
 		C:/Qt/5.13.1/mingw73_32/bin/moc.exe
-	C:\Qt\5.13.1\mingw73_32\bin\moc.exe $(DEFINES) --include "C:/Users/Pichau/Documents/Facul/8º Período/Sistemas Embarcados 1/Automacao Predial/Qt_gui/build-pp_gui-Desktop_Qt_5_13_1_MinGW_32_bit-Debug/release/moc_predefs.h" -IC:/Qt/5.13.1/mingw73_32/mkspecs/win32-g++ -I"C:/Users/Pichau/Documents/Facul/8º Período/Sistemas Embarcados 1/Automacao Predial/Qt_gui/pp_gui" -IC:/Qt/5.13.1/mingw73_32/include -IC:/Qt/5.13.1/mingw73_32/include/QtWidgets -IC:/Qt/5.13.1/mingw73_32/include/QtGui -IC:/Qt/5.13.1/mingw73_32/include/QtANGLE -IC:/Qt/5.13.1/mingw73_32/include/QtCore -I. -IC:/Qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include -IC:/Qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Tools/mingw730_32/i686-w64-mingw32/include ..\pp_gui\mainwindow.h -o release\moc_mainwindow.cpp
+	C:\Qt\5.13.1\mingw73_32\bin\moc.exe $(DEFINES) --include "C:/Users/isa_d/Desktop/2019.09.27/Automacao Predial/Qt_gui/build-pp_gui-Desktop_Qt_5_13_1_MinGW_32_bit-Debug/release/moc_predefs.h" -IC:/Qt/5.13.1/mingw73_32/mkspecs/win32-g++ -I"C:/Users/isa_d/Desktop/2019.09.27/Automacao Predial/Qt_gui/pp_gui" -IC:/Qt/5.13.1/mingw73_32/include -IC:/Qt/5.13.1/mingw73_32/include/QtWidgets -IC:/Qt/5.13.1/mingw73_32/include/QtGui -IC:/Qt/5.13.1/mingw73_32/include/QtANGLE -IC:/Qt/5.13.1/mingw73_32/include/QtCore -I. -IC:/Qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include -IC:/Qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Tools/mingw730_32/i686-w64-mingw32/include ..\pp_gui\mainwindow.h -o release\moc_mainwindow.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -545,8 +545,7 @@ release/behavior.o: ../../common/behavior.c ../../common/behavior.h \
 		../../common/hal.h \
 		../../common/datatypes.h \
 		../../common/sm1.h \
-		../../common/sm.h \
-		../../common/sm2.h
+		../../common/sm.h
 	$(CC) -c $(CFLAGS) $(INCPATH) -o release\behavior.o ..\..\common\behavior.c
 
 release/hal.o: ../pp_gui/hal.c ../../common/hal.h \

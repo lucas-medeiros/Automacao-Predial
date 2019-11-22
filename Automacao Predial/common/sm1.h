@@ -9,4 +9,6 @@ STATE(sm1_init);
 STATE(sm1_enchendo);
 STATE(sm1_parado);
 
+
+
 #endif // SM1_H

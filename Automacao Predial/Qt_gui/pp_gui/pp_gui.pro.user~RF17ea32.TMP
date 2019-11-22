@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.10.0, 2019-11-22T09:38:26. -->
+<!-- Written by QtCreator 4.10.0, 2019-10-25T12:45:58. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -306,8 +306,8 @@
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">pp_gui</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">pp_gui2</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/isa_d/Desktop/Eng de Computação/8 SEM/Sist Emb I/Sist Emb I - Copia/Trab_1 - Apres_Trab01/Automacao Predial/Qt_gui/pp_gui/pp_gui.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:E:/8 Periodo/Sist Emb I/Trab_1 - Teste - Copia/Automacao Predial/Qt_gui/pp_gui/pp_gui.pro</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="uint" key="RunConfiguration.QmlDebugServerPort">3768</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>

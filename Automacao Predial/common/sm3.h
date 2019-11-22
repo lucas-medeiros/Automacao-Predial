@@ -6,7 +6,7 @@
 extern StateMachine sm3;
 
 STATE(sm3_init);
-STATE(sm3_ligada);
-STATE(sm3_desligada);
+STATE(sm3_enchendo);
+STATE(sm3_parado);
 
 #endif // SM3_H
