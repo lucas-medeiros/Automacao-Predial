@@ -5,22 +5,28 @@
 double nivel_cano1 = 0;
 double nivel_cano2 = 0;
 double nivel_cano3 = 0;
-double vazao_canos = 9;
+double vazao_canos = 15;
 
 //Variáveis dos tanques:
 double nivel_tanque1 = 0;
-double nivel_tanque2 = 50;
-double nivel_tanque3 = 0*0.25;
+double nivel_tanque2 = 0;
+double nivel_tanque3 = 0;
+double volume_tanque1 = 0;
+double volume_tanque2 = 0*10;
+double volume_tanque3 = 0*10;
 double temperatura_tanque3 = 25.0;
+//volume máximo dos tanques:
+//1 e 2: 1000
+//3: 250
 
 //Variáveis das válvulas e bombas:
-double vazao_v1 = 0.10;
-double vazao_b1 = 0.0;
-double vazao_v2 = 0.15;
+double vazao_v1 = 1;
+double vazao_b1 = 1;
+double vazao_v2 = 1;
 double dT = 0.01; //variação da temperatura
 
 //Variável de consumo:
-double consumo = 0.00;
+double consumo = 0.6*1;
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -88,12 +94,16 @@ void MainWindow::AtualizaInterface(){
 
 void MainWindow::ProcessoFisico(){
 
+    nivel_tanque1 = volume_tanque1/10;
+    nivel_tanque2 = volume_tanque2/10;
+    nivel_tanque3 = volume_tanque3/5;
+
     if(pin_v1==TRUE) //adiciona água no tanque 1
-        nivel_tanque1 += vazao_v1;
+        volume_tanque1 += vazao_v1;
 
     if(pin_b1==TRUE){ //retira água do tanque 1 e adiciona no tanque 2
-        nivel_tanque1 -= vazao_b1;
-        nivel_tanque2 += vazao_b1;
+        volume_tanque1 -= vazao_b1;
+        volume_tanque2 += vazao_b1;
 
         //para a animação do encanamento (nível subindo)
         nivel_cano1 += vazao_canos;
@@ -115,16 +125,16 @@ void MainWindow::ProcessoFisico(){
     }
 
     if(pin_v2==TRUE){
-        //água passa do tanque que tem mais água para o tanque que tem menos
-        //volume do tanque2 = 4 * volume do tanque3
-        //tem q ter o mesmo nível físico -> tanque2 na metade = tanque3 cheio
-        if(nivel_tanque2 > nivel_tanque3){
-            nivel_tanque2 -= vazao_v2;
-            nivel_tanque3 += vazao_v2;
-        } else{
-            nivel_tanque2 += vazao_v2;
-            nivel_tanque3 -= vazao_v2;
-        }
+            //água passa do tanque que tem mais água para o tanque que tem menos
+            //volume do tanque2 = 4 * volume do tanque3
+            //tem q ter o mesmo nível físico -> tanque2 na metade = tanque3 cheio
+            if(nivel_tanque2 > nivel_tanque3){
+                volume_tanque2 -= vazao_v2;
+                volume_tanque3 += vazao_v2;
+            } else if (nivel_tanque3 > nivel_tanque2){
+                volume_tanque2 += vazao_v2;
+                volume_tanque3 -= vazao_v2;
+            }
     }
 
     if(pin_r1==TRUE){ //aumenta a temperatura da água no tanque3
@@ -135,8 +145,22 @@ void MainWindow::ProcessoFisico(){
     }
 
     //consumo:
-    nivel_tanque2 -= consumo;
-    nivel_tanque3 -= consumo*0.25;
+    volume_tanque2 -= consumo;
+    volume_tanque3 -= consumo*0.25;
+
+    //controle de fidelidade de volume máximo dos tanques
+    if(volume_tanque1>1000)
+        volume_tanque1=1000;
+    if(volume_tanque1<0)
+        volume_tanque1=0;
+    if(volume_tanque2>1000)
+        volume_tanque2=1000;
+    if(volume_tanque2<0)
+        volume_tanque2=0;
+    if(volume_tanque3>250)
+        volume_tanque3=250;
+    if(volume_tanque3<0)
+        volume_tanque3=0;
 
 
     //controle de fidelidade do tamanho do tanque
@@ -148,8 +172,8 @@ void MainWindow::ProcessoFisico(){
         nivel_tanque2=100;
     if(nivel_tanque2<0)
         nivel_tanque2 = 0;
-    if(nivel_tanque3>25)
-        nivel_tanque3=25;
+    if(nivel_tanque3>50)
+        nivel_tanque3=50;
     if(nivel_tanque3<0)
         nivel_tanque3 = 0;
 
@@ -166,17 +190,18 @@ void MainWindow::ProcessoFisico(){
         nivel_cano2=100;
     if(nivel_cano2<0)
         nivel_cano2 = 0;
-    if(nivel_cano3>25)
-        nivel_cano3=25;
+    if(nivel_cano3>100)
+        nivel_cano3=100;
     if(nivel_cano3<0)
         nivel_cano3 = 0;
+
 
     //atualiza os sensores
     pin_s11 = nivel_tanque1>=10;
     pin_s12 = nivel_tanque1>=90;
     pin_s21 = nivel_tanque2>=10;
     pin_s22 = nivel_tanque2>=90;
-    pin_s31 = nivel_tanque3>=10;
-    pin_s32 = nivel_tanque3>=25*0.9;
+    pin_s31 = nivel_tanque3>=10*0.5;
+    pin_s32 = nivel_tanque3>=90*0.5;
     temperaturaTanque3 = temperatura_tanque3;
 }
