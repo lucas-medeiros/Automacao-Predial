@@ -1,0 +1,6 @@
+10:12:09 **** Incremental Build of configuration HardwareDebug for project AP_Renesas ****
+make -j4 all 
+'Build complete.'
+
+10:12:09 Build Finished. 0 errors, 0 warnings. (took 383ms)
+

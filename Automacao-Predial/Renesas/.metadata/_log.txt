@@ -1,0 +1,12 @@
+!SESSION 2019-11-28 08:56:52.481 -----------------------------------------------
+eclipse.buildId=v4.3.1.001
+java.version=1.8.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.renesas.cdt.synergy.pagecommon 4 0 2019-11-28 09:09:50.456
+!MESSAGE C:\e2\internal\projectgen\arm\packs
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-11-28 09:12:10.158
+!MESSAGE Indexed 'AP_Renesas' (6 sources, 14 headers) in 0,937 sec: 1.041 declarations; 453 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)

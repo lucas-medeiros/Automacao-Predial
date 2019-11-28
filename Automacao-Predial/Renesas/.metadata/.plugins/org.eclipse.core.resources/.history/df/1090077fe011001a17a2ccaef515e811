@@ -1,0 +1,155 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+-include ../makefile.init
+
+RM := rm -rf *.sni *.dbg *.lst *.lis *.lpp *.map *.x *.lbp src/*.src src/*.p src/*.pp src/*.mrc *.bls *.libelf *.lbk *.abs *.fsy
+
+# All of the sources participating in the build are defined here
+-include sources.mk
+-include src/subdir.mk
+-include src/common/subdir.mk
+-include src/AP_pdg/i_src/subdir.mk
+-include src/AP_pdg/SYSTEM/subdir.mk
+-include src/AP_pdg/IO/subdir.mk
+-include src/AP_pdg/CMT/subdir.mk
+
+ifneq ($(MAKECMDGOALS),clean)
+ifneq ($(strip $(CC_UPPER_DEPS)),)
+-include $(CC_UPPER_DEPS)
+endif
+ifneq ($(strip $(C++_UPPER_DEPS)),)
+-include $(C++_UPPER_DEPS)
+endif
+ifneq ($(strip $(CXX_UPPER_DEPS)),)
+-include $(CXX_UPPER_DEPS)
+endif
+ifneq ($(strip $(CPP_UPPER_DEPS)),)
+-include $(CPP_UPPER_DEPS)
+endif
+ifneq ($(strip $(C_UPPER_DEPS)),)
+-include $(C_UPPER_DEPS)
+endif
+ifneq ($(strip $(CP_DEPS)),)
+-include $(CP_DEPS)
+endif
+ifneq ($(strip $(SRC_UPPER_DEPS)),)
+-include $(SRC_UPPER_DEPS)
+endif
+ifneq ($(strip $(S_DEPS)),)
+-include $(S_DEPS)
+endif
+ifneq ($(strip $(C_DEPS)),)
+-include $(C_DEPS)
+endif
+ifneq ($(strip $(SRC_DEPS)),)
+-include $(SRC_DEPS)
+endif
+ifneq ($(strip $(CC_DEPS)),)
+-include $(CC_DEPS)
+endif
+ifneq ($(strip $(ASM_UPPER_DEPS)),)
+-include $(ASM_UPPER_DEPS)
+endif
+ifneq ($(strip $(CP_UPPER_DEPS)),)
+-include $(CP_UPPER_DEPS)
+endif
+ifneq ($(strip $(C++_DEPS)),)
+-include $(C++_DEPS)
+endif
+ifneq ($(strip $(OBJ_DEPS)),)
+-include $(OBJ_DEPS)
+endif
+ifneq ($(strip $(ABS_DEPS)),)
+-include $(ABS_DEPS)
+endif
+ifneq ($(strip $(CXX_DEPS)),)
+-include $(CXX_DEPS)
+endif
+ifneq ($(strip $(ASM_DEPS)),)
+-include $(ASM_DEPS)
+endif
+ifneq ($(strip $(S_UPPER_DEPS)),)
+-include $(S_UPPER_DEPS)
+endif
+ifneq ($(strip $(O_DEPS)),)
+-include $(O_DEPS)
+endif
+ifneq ($(strip $(CPP_DEPS)),)
+-include $(CPP_DEPS)
+endif
+endif
+
+ifneq ($(strip $(SRC_UPPER_SRCS)),)
+ALL_ASMS += $(SRC_UPPER_SRCS) 
+endif
+ifneq ($(strip $(SRC_SRCS)),)
+ALL_ASMS += $(SRC_SRCS) 
+endif
+ifneq ($(strip $(S_UPPER_SRCS)),)
+ALL_ASMS += $(S_UPPER_SRCS) 
+endif
+ifneq ($(strip $(S_SRCS)),)
+ALL_ASMS += $(S_SRCS) 
+endif
+
+-include ../makefile.defs
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CONVERTOR_OUTPUT_OUTPUTS += \
+AP_Renesas.mot \
+
+LINKER_OUTPUT_OUTPUTS += \
+AP_Renesas.abs \
+
+LIBRARY_GENERATOR_OUTPUTTYPE_OUTPUTS += \
+AP_Renesas.lib \
+
+# All Target
+all: AP_Renesas.mot
+	@echo 'Build complete.'
+
+# Tool invocations
+AP_Renesas.mot: $(LINKER_OUTPUT_OUTPUTS)
+	@echo 'Invoking: Converter'
+	rlink   "C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\HardwareDebug\AP_Renesas.abs" -form=stype  -output="C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\HardwareDebug\AP_Renesas.mot"
+	@echo 'Finished building target:'
+	@echo.
+	$(MAKE) --no-print-directory post-build
+
+AP_Renesas.abs: $(OBJS) $(LIBRARY_GENERATOR_OUTPUTTYPE_OUTPUTS) $(ALL_ASMS)   \
+C:\Renesas\PDG2\lib\RX62N\RX62N_~3.LIB
+	@echo 'Invoking: Linker'
+	@echo 'Building target:'
+	rlink  -subcommand="LinkerSubCommand.tmp"  -library="C:\temp\Lucas\AUTOMA~1\AUTOMA~1\Renesas\AP_REN~1\HARDWA~2\AP_Renesas.lib" -library="C:\Renesas\PDG2\lib\RX62N\RX62N_library_100_little.lib" -noprelink -list="AP_Renesas.map" -show -nooptimize -debug -output="C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\HardwareDebug\AP_Renesas.abs" -rom=D=R,D_1=R_1,D_2=R_2 -nocompress -nomessage -nologo
+	@echo 'Finished building:'
+	@echo.
+
+AP_Renesas.lib:  
+	@echo 'Invoking: Standard Library'
+	lbgrx -head=runtime,stdio,stdlib,string,new -isa=rxv1 -dbl_size=8 -fpu -output="AP_Renesas.lib"
+	@echo 'Finished building:'
+	@echo.
+
+# Other Targets
+clean:
+	-$(RM) $(LIBRARY_GENERATOR_OUTPUTTYPE_OUTPUTS) $(CONVERTOR_OUTPUT_OUTPUTS) 
+	-rm -rf "src"/*.obj "src"/*.d "src"/*.src "src"/*.p "src"/*.pp "src"/*.mrc "src"/*.prn
+	-rm -rf "src/common"/*.obj "src/common"/*.d "src/common"/*.src "src/common"/*.p "src/common"/*.pp "src/common"/*.mrc "src/common"/*.prn
+	-rm -rf "src/AP_pdg/i_src"/*.obj "src/AP_pdg/i_src"/*.d "src/AP_pdg/i_src"/*.src "src/AP_pdg/i_src"/*.p "src/AP_pdg/i_src"/*.pp "src/AP_pdg/i_src"/*.mrc "src/AP_pdg/i_src"/*.prn
+	-rm -rf "src/AP_pdg/SYSTEM"/*.obj "src/AP_pdg/SYSTEM"/*.d "src/AP_pdg/SYSTEM"/*.src "src/AP_pdg/SYSTEM"/*.p "src/AP_pdg/SYSTEM"/*.pp "src/AP_pdg/SYSTEM"/*.mrc "src/AP_pdg/SYSTEM"/*.prn
+	-rm -rf "src/AP_pdg/IO"/*.obj "src/AP_pdg/IO"/*.d "src/AP_pdg/IO"/*.src "src/AP_pdg/IO"/*.p "src/AP_pdg/IO"/*.pp "src/AP_pdg/IO"/*.mrc "src/AP_pdg/IO"/*.prn
+	-rm -rf "src/AP_pdg/CMT"/*.obj "src/AP_pdg/CMT"/*.d "src/AP_pdg/CMT"/*.src "src/AP_pdg/CMT"/*.p "src/AP_pdg/CMT"/*.pp "src/AP_pdg/CMT"/*.mrc "src/AP_pdg/CMT"/*.prn
+	@echo.
+	@echo 'Clean complete.'
+
+post-build:
+	@echo.
+	-C:\e2\DEBUGC~1\RX\RX_CON~1.EXE AP_Renesas.abs AP_Renesas.x
+	@echo.
+
+.PHONY: all clean dependents $(LIBRARY_GENERATOR_OUTPUTTYPE_OUTPUTS)
+.SECONDARY: post-build
+
+-include ../makefile.targets

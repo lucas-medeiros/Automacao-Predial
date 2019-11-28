@@ -1,0 +1,773 @@
+Renesas Optimizing Linker (W2.07.00 )             28-Nov-2019 10:11:00
+
+*** Options ***
+
+-subcommand=LinkerSubCommand.tmp
+-input="./src/AP_Renesas.obj"
+-input="./src/dbsct.obj"
+-input="./src/hal.obj"
+-input="./src/reset_program.obj"
+-input="./src/sbrk.obj"
+-input="./src/common/behavior.obj"
+-input="./src/common/chronometer.obj"
+-input="./src/common/sm1.obj"
+-input="./src/common/sm2.obj"
+-input="./src/common/sm3.obj"
+-input="./src/common/sm4.obj"
+-input="./src/AP_pdg/i_src/Interrupt_ADC_10.obj"
+-input="./src/AP_pdg/i_src/Interrupt_CMT.obj"
+-input="./src/AP_pdg/i_src/Interrupt_INTC.obj"
+-input="./src/AP_pdg/SYSTEM/R_PG_Clock.obj"
+-input="./src/AP_pdg/IO/R_PG_IO_PORT_P0.obj"
+-input="./src/AP_pdg/IO/R_PG_IO_PORT_P2.obj"
+-input="./src/AP_pdg/IO/R_PG_IO_PORT_P4.obj"
+-input="./src/AP_pdg/IO/R_PG_IO_PORT_P5.obj"
+-input="./src/AP_pdg/IO/R_PG_IO_PORT_PA.obj"
+-input="./src/AP_pdg/IO/R_PG_IO_PORT_PD.obj"
+-input="./src/AP_pdg/CMT/R_PG_Timer_CMT_U0.obj"
+-input="./src/AP_pdg/AD_10/R_PG_ADC_10_AD0.obj"
+-start=SU,SI,B_1,R_1,B_2,R_2,B,R/04,PResetPRG,C_1,C_2,C,C$*,D*,W*,L,P/0FFF80000,FIXEDVECT/0FFFFFFD0
+-library=C:\temp\Lucas\AUTOMA~1\AUTOMA~1\Renesas\AP_REN~1\HARDWA~2\AP_Renesas.lib
+-library=C:\Renesas\PDG2\lib\RX62N\RX62N_library_100_little.lib
+-noprelink
+-list=AP_Renesas.map
+-show
+-nooptimize
+-debug
+-output=C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\HardwareDebug\AP_Renesas.abs
+-rom=D=R,D_1=R_1,D_2=R_2
+-nocompress
+-nomessage
+-nologo
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+SU
+                                  00000004  00000103       100   4
+SI
+                                  00000104  00000403       300   4
+B_1
+                                  00000404  0000040b         8   1
+R_1
+                                  0000040c  0000040c         0   1
+B_2
+                                  0000040c  0000040d         2   2
+R_2
+                                  0000040e  0000040e         0   1
+B
+                                  00000410  0000086b       45c   4
+R
+                                  0000086c  000008cf        64   4
+PResetPRG
+                                  fff80000  fff80030        31   1
+C_1
+                                  fff80031  fff80038         8   1
+C_2
+                                  fff8003a  fff80041         8   2
+C
+                                  fff80044  fff80077        34   4
+C$DSEC
+                                  fff80078  fff8009b        24   4
+C$BSEC
+                                  fff8009c  fff800b3        18   4
+C$INIT
+                                  fff800b4  fff800b4         0   1
+C$VECT
+                                  fff800b4  fff804b3       400   4
+C$VTBL
+                                  fff804b4  fff804b4         0   1
+D
+                                  fff804b4  fff80517        64   4
+D_1
+                                  fff80518  fff80518         0   1
+D_2
+                                  fff80518  fff80518         0   1
+W
+                                  fff80518  fff80518         0   4
+W_1
+                                  fff80518  fff8051f         8   1
+W_2
+                                  fff80520  fff80533        14   2
+L
+                                  fff80534  fff80534         0   1
+P
+                                  fff80534  fff82303      1dd0   1
+FIXEDVECT
+                                  ffffffd0  ffffffff        30   4
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+
+SECTION=SU
+FILE=.\src\reset_program.obj
+                                  00000004  00000103       100
+
+SECTION=SI
+FILE=.\src\reset_program.obj
+                                  00000104  00000403       300
+
+SECTION=B_1
+FILE=globals_ADC_10
+                                  00000404  00000405         2
+  _rpdl_adcsr0_copy
+                                  00000404         1   data ,g         2
+  _rpdl_adcsr1_copy
+                                  00000405         1   data ,g         2
+FILE=globals_CMT
+                                  00000406  00000409         4
+  _rpdl_CMT_one_shot
+                                  00000406         4   data ,g         5
+FILE=globals_INTC
+                                  0000040a  0000040b         2
+  _rpdl_INTC_brk_command
+                                  0000040a         1   data ,g         5
+  _rpdl_INTC_brk_data8
+                                  0000040b         1   data ,g         3
+
+SECTION=B_2
+FILE=.\src\hal.obj
+                                  0000040c  0000040d         2
+  _valorCAD
+                                  0000040c         2   data ,g         2
+
+SECTION=B
+FILE=.\src\sbrk.obj
+                                  00000410  0000080f       400
+  _heap_area
+                                  00000410       400   data ,l         2
+FILE=.\src\common\sm1.obj
+                                  00000810  0000081b         c
+  _sm1
+                                  00000810         c   data ,g         1
+FILE=.\src\common\sm2.obj
+                                  0000081c  0000082b        10
+  _sm2
+                                  0000081c         c   data ,g         1
+  _sm2_chronoFast
+                                  00000828         4   data ,g         1
+FILE=.\src\common\sm3.obj
+                                  0000082c  00000837         c
+  _sm3
+                                  0000082c         c   data ,g         1
+FILE=.\src\common\sm4.obj
+                                  00000838  00000843         c
+  _sm4
+                                  00000838         c   data ,g         1
+FILE=globals_ADC_10
+                                  00000844  0000084b         8
+  _rpdl_ADC_10_callback_func
+                                  00000844         8   data ,g         3
+FILE=globals_CMT
+                                  0000084c  0000085b        10
+  _rpdl_CMT_callback_func
+                                  0000084c        10   data ,g         5
+FILE=globals_INTC
+                                  0000085c  0000085f         4
+  _rpdl_INTC_saved_isp
+                                  0000085c         4   data ,g         1
+FILE=globals_CGC
+                                  00000860  0000086b         c
+  _rpdl_CGC_f_pclk
+                                  00000860         4   data ,g         6
+  _rpdl_CGC_f_iclk
+                                  00000864         4   data ,g         2
+  _rpdl_CGC_f_bclk
+                                  00000868         4   data ,g         3
+
+SECTION=R
+FILE=.\src\hal.obj
+                                  0000086c  0000086f         4
+  _TimerCont
+                                  0000086c         4   data ,g         2
+FILE=.\src\sbrk.obj
+                                  00000870  00000873         4
+  _brk
+                                  00000870         4   data ,l         1
+FILE=.\src\common\sm2.obj
+                                  00000874  00000877         4
+  _timer
+                                  00000874         4   data ,g         1
+FILE=globals_INTC
+                                  00000878  000008cf        58
+  _rpdl_INTC_callback_func
+                                  00000878        58   data ,g        16
+
+SECTION=PResetPRG
+FILE=.\src\reset_program.obj
+                                  fff80000  fff80030        31
+  _PowerON_Reset_PC
+                                  fff80000        31   entry,g         1
+
+SECTION=C_1
+FILE=globals_ADC_10
+                                  fff80031  fff80034         4
+  _rpdl_ADC_10_div_value
+                                  fff80031         4   data ,g         1
+FILE=globals_CGC
+                                  fff80035  fff80038         4
+  _rpdl_CGC_xCLK_mul_value
+                                  fff80035         4   data ,g         1
+
+SECTION=C_2
+FILE=globals_CMT
+                                  fff8003a  fff80041         8
+  _rpdl_CMT_div_value
+                                  fff8003a         8   data ,g         2
+
+SECTION=C
+FILE=.\src\dbsct.obj
+                                  fff80044  fff80077        34
+  __CTBL
+                                  fff80044        34   data ,g         0
+
+SECTION=C$DSEC
+FILE=.\src\dbsct.obj
+                                  fff80078  fff8009b        24
+  __DTBL
+                                  fff80078        24   data ,g         0
+
+SECTION=C$BSEC
+FILE=.\src\dbsct.obj
+                                  fff8009c  fff800b3        18
+  __BTBL
+                                  fff8009c        18   data ,g         0
+
+SECTION=C$VECT
+FILE=.\src\dbsct.obj
+                                  fff800b4  fff804b3       400
+
+SECTION=D
+FILE=.\src\hal.obj
+                                  fff804b4  fff804b7         4
+FILE=.\src\sbrk.obj
+                                  fff804b8  fff804bb         4
+FILE=.\src\common\sm2.obj
+                                  fff804bc  fff804bf         4
+FILE=globals_INTC
+                                  fff804c0  fff80517        58
+
+SECTION=W_1
+FILE=R_IO_PORT_SetAll
+                                  fff80518  fff8051f         8
+
+SECTION=W_2
+FILE=.\src\AP_pdg\i_src\Interrupt_INTC.obj
+                                  fff80520  fff80533        14
+
+SECTION=P
+FILE=.\src\AP_Renesas.obj
+                                  fff80534  fff80537         4
+  _main
+                                  fff80534         4   func ,g         1
+FILE=.\src\hal.obj
+                                  fff80538  fff805e3        ac
+  _Cmt0IntFunc
+                                  fff80538         d   func ,g         1
+  _Ad0IntFunc
+                                  fff80545         a   func ,g         1
+  _InitHAL
+                                  fff8054f        28   func ,g         1
+  _Now
+                                  fff80577         9   func ,g         a
+  _s11
+                                  fff80580         d   func ,g         4
+  _s12
+                                  fff8058d         d   func ,g         3
+  _s21
+                                  fff8059a         d   func ,g         4
+  _s22
+                                  fff805a7         d   func ,g         3
+  _s31
+                                  fff805b4         3   func ,g         3
+  _s32
+                                  fff805b7         d   func ,g         3
+  _lerTemperaturaTanque3
+                                  fff805c4        10   func ,g         3
+  _v1
+                                  fff805d4         4   func ,g         3
+  _b1
+                                  fff805d8         4   func ,g         3
+  _v2
+                                  fff805dc         4   func ,g         3
+  _r1
+                                  fff805e0         4   func ,g         3
+FILE=.\src\sbrk.obj
+                                  fff805e4  fff80604        21
+  _sbrk
+                                  fff805e4        21   func ,g         0
+FILE=.\src\common\behavior.obj
+                                  fff80605  fff80684        80
+  _behavior
+                                  fff80605        80   func ,g         1
+FILE=.\src\common\chronometer.obj
+                                  fff80685  fff806a6        22
+  _chronoStart
+                                  fff80685        11   func ,g         1
+  _chronoIsFinished
+                                  fff80696        11   func ,g         1
+FILE=.\src\common\sm1.obj
+                                  fff806a7  fff8072a        84
+  _sm1_init
+                                  fff806a7        2a   func ,g         1
+  _sm1_enchendo
+                                  fff806d1        23   func ,g         2
+  _sm1_parado
+                                  fff806f4        37   func ,g         2
+FILE=.\src\common\sm2.obj
+                                  fff8072b  fff807f5        cb
+  _sm2_init
+                                  fff8072b        32   func ,g         1
+  _sm2_enchendo
+                                  fff8075d        2a   func ,g         2
+  _sm2_parado
+                                  fff80787        6f   func ,g         2
+FILE=.\src\common\sm3.obj
+                                  fff807f6  fff80890        9b
+  _sm3_init
+                                  fff807f6        32   func ,g         1
+  _sm3_ligada
+                                  fff80828        2a   func ,g         2
+  _sm3_desligada
+                                  fff80852        3f   func ,g         2
+FILE=.\src\common\sm4.obj
+                                  fff80891  fff8092e        9e
+  _sm4_init
+                                  fff80891        33   func ,g         1
+  _sm4_ligada
+                                  fff808c4        2c   func ,g         2
+  _sm4_desligada
+                                  fff808f0        3f   func ,g         2
+FILE=.\src\AP_pdg\i_src\Interrupt_ADC_10.obj
+                                  fff8092f  fff80966        38
+  _Interrupt_ADC0
+                                  fff8092f        1c   func ,g         0
+  _Interrupt_ADC1
+                                  fff8094b        1c   func ,g         0
+FILE=.\src\AP_pdg\i_src\Interrupt_CMT.obj
+                                  fff80967  fff80a5a        f4
+  _Interrupt_CMT0
+                                  fff80967        3d   func ,g         0
+  _Interrupt_CMT1
+                                  fff809a4        3d   func ,g         0
+  _Interrupt_CMT2
+                                  fff809e1        3d   func ,g         0
+  _Interrupt_CMT3
+                                  fff80a1e        3d   func ,g         0
+FILE=.\src\AP_pdg\i_src\Interrupt_INTC.obj
+                                  fff80a5b  fff80dd7       37d
+  _Interrupt_IRQ0
+                                  fff80a5b        1c   func ,g         0
+  _Interrupt_IRQ1
+                                  fff80a77        1c   func ,g         0
+  _Interrupt_IRQ2
+                                  fff80a93        1c   func ,g         0
+  _Interrupt_IRQ3
+                                  fff80aaf        1c   func ,g         0
+  _Interrupt_IRQ4
+                                  fff80acb        1c   func ,g         0
+  _Interrupt_IRQ5
+                                  fff80ae7        1c   func ,g         0
+  _Interrupt_IRQ6
+                                  fff80b03        1c   func ,g         0
+  _Interrupt_IRQ7
+                                  fff80b1f        1c   func ,g         0
+  _Interrupt_IRQ8
+                                  fff80b3b        1c   func ,g         0
+  _Interrupt_IRQ9
+                                  fff80b57        1c   func ,g         0
+  _Interrupt_IRQ10
+                                  fff80b73        1c   func ,g         0
+  _Interrupt_IRQ11
+                                  fff80b8f        1c   func ,g         0
+  _Interrupt_IRQ12
+                                  fff80bab        1c   func ,g         0
+  _Interrupt_IRQ13
+                                  fff80bc7        1c   func ,g         0
+  _Interrupt_IRQ14
+                                  fff80be3        1c   func ,g         0
+  _Interrupt_IRQ15
+                                  fff80bff        1c   func ,g         0
+  _Interrupt_SWINT
+                                  fff80c1b        1c   func ,g         0
+  _Interrupt_BRK
+                                  fff80c37       114   func ,g         0
+  _Excep_PrivilegedInst
+                                  fff80d4b        1c   func ,g         1
+  _Excep_Access
+                                  fff80d67        1c   func ,g         1
+  _Excep_UndefinedInst
+                                  fff80d83        1c   func ,g         1
+  _Excep_FloatingPoint
+                                  fff80d9f        1c   func ,g         1
+  _Interrupt_NMI
+                                  fff80dbb        1c   func ,g         1
+  _Dummy
+                                  fff80dd7         1   func ,g         6
+FILE=.\src\AP_pdg\SYSTEM\R_PG_Clock.obj
+                                  fff80dd8  fff80e03        2c
+  _R_PG_Clock_Set
+                                  fff80dd8        1c   func ,g         1
+  _R_PG_Clock_Start_SUB
+                                  fff80df4         8   func ,g         0
+  _R_PG_Clock_Stop_SUB
+                                  fff80dfc         8   func ,g         0
+FILE=.\src\AP_pdg\IO\R_PG_IO_PORT_P0.obj
+                                  fff80e04  fff80e72        6f
+  _R_PG_IO_PORT_Set_P0
+                                  fff80e04         f   func ,g         1
+  _R_PG_IO_PORT_Set_P05
+                                  fff80e13         f   func ,g         0
+  _R_PG_IO_PORT_Read_P0
+                                  fff80e22         d   func ,g         0
+  _R_PG_IO_PORT_Read_P05
+                                  fff80e2f        10   func ,g         1
+  _R_PG_IO_PORT_Read_P07
+                                  fff80e3f        10   func ,g         0
+  _R_PG_IO_PORT_Write_P0
+                                  fff80e4f         8   func ,g         0
+  _R_PG_IO_PORT_Write_P05
+                                  fff80e57         e   func ,g         0
+  _R_PG_IO_PORT_Write_P07
+                                  fff80e65         e   func ,g         0
+FILE=.\src\AP_pdg\IO\R_PG_IO_PORT_P2.obj
+                                  fff80e73  fff80fd3       161
+  _R_PG_IO_PORT_Set_P2
+                                  fff80e73        3a   func ,g         1
+  _R_PG_IO_PORT_Set_P20
+                                  fff80ead         e   func ,g         0
+  _R_PG_IO_PORT_Set_P21
+                                  fff80ebb         e   func ,g         0
+  _R_PG_IO_PORT_Set_P22
+                                  fff80ec9         e   func ,g         0
+  _R_PG_IO_PORT_Read_P2
+                                  fff80ed7         d   func ,g         0
+  _R_PG_IO_PORT_Read_P20
+                                  fff80ee4         f   func ,g         1
+  _R_PG_IO_PORT_Read_P21
+                                  fff80ef3         f   func ,g         0
+  _R_PG_IO_PORT_Read_P22
+                                  fff80f02         f   func ,g         1
+  _R_PG_IO_PORT_Read_P23
+                                  fff80f11         f   func ,g         0
+  _R_PG_IO_PORT_Read_P24
+                                  fff80f20        10   func ,g         0
+  _R_PG_IO_PORT_Read_P25
+                                  fff80f30        10   func ,g         0
+  _R_PG_IO_PORT_Read_P26
+                                  fff80f40        10   func ,g         0
+  _R_PG_IO_PORT_Read_P27
+                                  fff80f50        10   func ,g         0
+  _R_PG_IO_PORT_Write_P2
+                                  fff80f60         8   func ,g         0
+  _R_PG_IO_PORT_Write_P20
+                                  fff80f68         d   func ,g         0
+  _R_PG_IO_PORT_Write_P21
+                                  fff80f75         d   func ,g         1
+  _R_PG_IO_PORT_Write_P22
+                                  fff80f82         d   func ,g         0
+  _R_PG_IO_PORT_Write_P23
+                                  fff80f8f         d   func ,g         0
+  _R_PG_IO_PORT_Write_P24
+                                  fff80f9c         e   func ,g         0
+  _R_PG_IO_PORT_Write_P25
+                                  fff80faa         e   func ,g         0
+  _R_PG_IO_PORT_Write_P26
+                                  fff80fb8         e   func ,g         0
+  _R_PG_IO_PORT_Write_P27
+                                  fff80fc6         e   func ,g         0
+FILE=.\src\AP_pdg\IO\R_PG_IO_PORT_P4.obj
+                                  fff80fd4  fff810ea       117
+  _R_PG_IO_PORT_Set_P4
+                                  fff80fd4         d   func ,g         1
+  _R_PG_IO_PORT_Set_P40
+                                  fff80fe1         d   func ,g         0
+  _R_PG_IO_PORT_Read_P4
+                                  fff80fee         d   func ,g         0
+  _R_PG_IO_PORT_Read_P40
+                                  fff80ffb         f   func ,g         0
+  _R_PG_IO_PORT_Read_P41
+                                  fff8100a         f   func ,g         0
+  _R_PG_IO_PORT_Read_P42
+                                  fff81019         f   func ,g         0
+  _R_PG_IO_PORT_Read_P43
+                                  fff81028         f   func ,g         0
+  _R_PG_IO_PORT_Read_P44
+                                  fff81037        10   func ,g         0
+  _R_PG_IO_PORT_Read_P45
+                                  fff81047        10   func ,g         0
+  _R_PG_IO_PORT_Read_P46
+                                  fff81057        10   func ,g         0
+  _R_PG_IO_PORT_Read_P47
+                                  fff81067        10   func ,g         0
+  _R_PG_IO_PORT_Write_P4
+                                  fff81077         8   func ,g         0
+  _R_PG_IO_PORT_Write_P40
+                                  fff8107f         d   func ,g         0
+  _R_PG_IO_PORT_Write_P41
+                                  fff8108c         d   func ,g         0
+  _R_PG_IO_PORT_Write_P42
+                                  fff81099         d   func ,g         0
+  _R_PG_IO_PORT_Write_P43
+                                  fff810a6         d   func ,g         0
+  _R_PG_IO_PORT_Write_P44
+                                  fff810b3         e   func ,g         0
+  _R_PG_IO_PORT_Write_P45
+                                  fff810c1         e   func ,g         0
+  _R_PG_IO_PORT_Write_P46
+                                  fff810cf         e   func ,g         0
+  _R_PG_IO_PORT_Write_P47
+                                  fff810dd         e   func ,g         0
+FILE=.\src\AP_pdg\IO\R_PG_IO_PORT_P5.obj
+                                  fff810eb  fff811e6        fc
+  _R_PG_IO_PORT_Set_P5
+                                  fff810eb        20   func ,g         1
+  _R_PG_IO_PORT_Set_P50
+                                  fff8110b         d   func ,g         0
+  _R_PG_IO_PORT_Set_P55
+                                  fff81118         e   func ,g         0
+  _R_PG_IO_PORT_Read_P5
+                                  fff81126         d   func ,g         0
+  _R_PG_IO_PORT_Read_P50
+                                  fff81133         f   func ,g         1
+  _R_PG_IO_PORT_Read_P51
+                                  fff81142         f   func ,g         0
+  _R_PG_IO_PORT_Read_P52
+                                  fff81151         f   func ,g         0
+  _R_PG_IO_PORT_Read_P53
+                                  fff81160         f   func ,g         0
+  _R_PG_IO_PORT_Read_P54
+                                  fff8116f        10   func ,g         0
+  _R_PG_IO_PORT_Read_P55
+                                  fff8117f        10   func ,g         1
+  _R_PG_IO_PORT_Write_P5
+                                  fff8118f         8   func ,g         0
+  _R_PG_IO_PORT_Write_P50
+                                  fff81197         d   func ,g         0
+  _R_PG_IO_PORT_Write_P51
+                                  fff811a4         d   func ,g         0
+  _R_PG_IO_PORT_Write_P52
+                                  fff811b1         d   func ,g         0
+  _R_PG_IO_PORT_Write_P53
+                                  fff811be         d   func ,g         0
+  _R_PG_IO_PORT_Write_P54
+                                  fff811cb         e   func ,g         0
+  _R_PG_IO_PORT_Write_P55
+                                  fff811d9         e   func ,g         0
+FILE=.\src\AP_pdg\IO\R_PG_IO_PORT_PA.obj
+                                  fff811e7  fff81346       160
+  _R_PG_IO_PORT_Set_PA
+                                  fff811e7        39   func ,g         1
+  _R_PG_IO_PORT_Set_PA0
+                                  fff81220         e   func ,g         0
+  _R_PG_IO_PORT_Set_PA1
+                                  fff8122e         e   func ,g         0
+  _R_PG_IO_PORT_Set_PA2
+                                  fff8123c         e   func ,g         0
+  _R_PG_IO_PORT_Read_PA
+                                  fff8124a         d   func ,g         0
+  _R_PG_IO_PORT_Read_PA0
+                                  fff81257         f   func ,g         0
+  _R_PG_IO_PORT_Read_PA1
+                                  fff81266         f   func ,g         0
+  _R_PG_IO_PORT_Read_PA2
+                                  fff81275         f   func ,g         0
+  _R_PG_IO_PORT_Read_PA3
+                                  fff81284         f   func ,g         0
+  _R_PG_IO_PORT_Read_PA4
+                                  fff81293        10   func ,g         0
+  _R_PG_IO_PORT_Read_PA5
+                                  fff812a3        10   func ,g         0
+  _R_PG_IO_PORT_Read_PA6
+                                  fff812b3        10   func ,g         0
+  _R_PG_IO_PORT_Read_PA7
+                                  fff812c3        10   func ,g         0
+  _R_PG_IO_PORT_Write_PA
+                                  fff812d3         8   func ,g         0
+  _R_PG_IO_PORT_Write_PA0
+                                  fff812db         d   func ,g         1
+  _R_PG_IO_PORT_Write_PA1
+                                  fff812e8         d   func ,g         1
+  _R_PG_IO_PORT_Write_PA2
+                                  fff812f5         d   func ,g         1
+  _R_PG_IO_PORT_Write_PA3
+                                  fff81302         d   func ,g         0
+  _R_PG_IO_PORT_Write_PA4
+                                  fff8130f         e   func ,g         0
+  _R_PG_IO_PORT_Write_PA5
+                                  fff8131d         e   func ,g         0
+  _R_PG_IO_PORT_Write_PA6
+                                  fff8132b         e   func ,g         0
+  _R_PG_IO_PORT_Write_PA7
+                                  fff81339         e   func ,g         0
+FILE=.\src\AP_pdg\IO\R_PG_IO_PORT_PD.obj
+                                  fff81347  fff81461       11b
+  _R_PG_IO_PORT_Set_PD
+                                  fff81347         f   func ,g         1
+  _R_PG_IO_PORT_Set_PD6
+                                  fff81356         f   func ,g         0
+  _R_PG_IO_PORT_Read_PD
+                                  fff81365         d   func ,g         0
+  _R_PG_IO_PORT_Read_PD0
+                                  fff81372         f   func ,g         0
+  _R_PG_IO_PORT_Read_PD1
+                                  fff81381         f   func ,g         0
+  _R_PG_IO_PORT_Read_PD2
+                                  fff81390         f   func ,g         0
+  _R_PG_IO_PORT_Read_PD3
+                                  fff8139f         f   func ,g         0
+  _R_PG_IO_PORT_Read_PD4
+                                  fff813ae        10   func ,g         0
+  _R_PG_IO_PORT_Read_PD5
+                                  fff813be        10   func ,g         0
+  _R_PG_IO_PORT_Read_PD6
+                                  fff813ce        10   func ,g         0
+  _R_PG_IO_PORT_Read_PD7
+                                  fff813de        10   func ,g         0
+  _R_PG_IO_PORT_Write_PD
+                                  fff813ee         8   func ,g         0
+  _R_PG_IO_PORT_Write_PD0
+                                  fff813f6         d   func ,g         0
+  _R_PG_IO_PORT_Write_PD1
+                                  fff81403         d   func ,g         0
+  _R_PG_IO_PORT_Write_PD2
+                                  fff81410         d   func ,g         0
+  _R_PG_IO_PORT_Write_PD3
+                                  fff8141d         d   func ,g         0
+  _R_PG_IO_PORT_Write_PD4
+                                  fff8142a         e   func ,g         0
+  _R_PG_IO_PORT_Write_PD5
+                                  fff81438         e   func ,g         0
+  _R_PG_IO_PORT_Write_PD6
+                                  fff81446         e   func ,g         0
+  _R_PG_IO_PORT_Write_PD7
+                                  fff81454         e   func ,g         0
+FILE=.\src\AP_pdg\CMT\R_PG_Timer_CMT_U0.obj
+                                  fff81462  fff814b6        55
+  _R_PG_Timer_Start_CMT_U0_C0
+                                  fff81462        1e   func ,g         1
+  _R_PG_Timer_HaltCount_CMT_U0_C0
+                                  fff81480         a   func ,g         0
+  _R_PG_Timer_ResumeCount_CMT_U0_C0
+                                  fff8148a         a   func ,g         0
+  _R_PG_Timer_GetCounterValue_CMT_U0_C0
+                                  fff81494        10   func ,g         0
+  _R_PG_Timer_SetCounterValue_CMT_U0_C0
+                                  fff814a4         d   func ,g         0
+  _R_PG_Timer_StopModule_CMT_U0
+                                  fff814b1         6   func ,g         0
+FILE=.\src\AP_pdg\AD_10\R_PG_ADC_10_AD0.obj
+                                  fff814b7  fff814fc        46
+  _R_PG_ADC_10_Set_AD0
+                                  fff814b7        27   func ,g         1
+  _R_PG_ADC_10_StartConversionSW_AD0
+                                  fff814de         6   func ,g         1
+  _R_PG_ADC_10_StopConversion_AD0
+                                  fff814e4         6   func ,g         0
+  _R_PG_ADC_10_GetResult_AD0
+                                  fff814ea         d   func ,g         1
+  _R_PG_ADC_10_StopModule_AD0
+                                  fff814f7         6   func ,g         0
+FILE=__initsct
+                                  fff814fd  fff81546        4a
+  __INITSCT
+                                  fff814fd         0   none ,g         1
+  loop1
+                                  fff8150f         0   none ,l         1
+  next_loop1
+                                  fff8151d         0   none ,l         2
+  loop3
+                                  fff8152f         0   none ,l         1
+  next_loop3
+                                  fff81540         0   none ,l         2
+FILE=R_ADC_10_ControlAll
+                                  fff81547  fff815d5        8f
+  _R_ADC_10_ControlAll
+                                  fff81547        8f   func ,g         2
+FILE=R_ADC_10_CreateAll
+                                  fff815d6  fff81920       34b
+  _R_ADC_10_CreateAll
+                                  fff815d6       34b   func ,g         1
+FILE=R_ADC_10_DestroyAll
+                                  fff81921  fff8197e        5e
+  _R_ADC_10_DestroyAll
+                                  fff81921        5e   func ,g         1
+FILE=R_ADC_10_ReadAll
+                                  fff8197f  fff819f3        75
+  _R_ADC_10_ReadAll
+                                  fff8197f        75   func ,g         1
+FILE=R_CGC_ControlAll
+                                  fff819f4  fff81a1f        2c
+  _R_CGC_ControlAll
+                                  fff819f4        2c   func ,g         2
+FILE=R_CGC_SetAll
+                                  fff81a20  fff81c20       201
+  _R_CGC_SetAll
+                                  fff81a20       201   func ,g         1
+FILE=R_CMT_ControlAll
+                                  fff81c21  fff81e29       209
+  _R_CMT_ControlAll
+                                  fff81c21       209   func ,g         3
+FILE=R_CMT_CreateAll
+                                  fff81e2a  fff82026       1fd
+  _R_CMT_CreateAll
+                                  fff81e2a       1fd   func ,g         1
+FILE=R_CMT_DestroyAll
+                                  fff82027  fff82081        5b
+  _R_CMT_DestroyAll
+                                  fff82027        5b   func ,g         1
+FILE=R_CMT_ReadAll
+                                  fff82082  fff820c6        45
+  _R_CMT_ReadAll
+                                  fff82082        45   func ,g         1
+FILE=R_IO_PORT_ReadDataAll
+                                  fff820c7  fff820e2        1c
+  _R_IO_PORT_ReadDataAll
+                                  fff820c7        1c   func ,g        28
+FILE=R_IO_PORT_ReadDataRegisterAll
+                                  fff820e3  fff820f0         e
+  _R_IO_PORT_ReadDataRegisterAll
+                                  fff820e3         e   func ,g         6
+FILE=R_IO_PORT_SetAll
+                                  fff820f1  fff821af        bf
+  _R_IO_PORT_SetAll
+                                  fff820f1        bf   func ,g        16
+FILE=R_IO_PORT_WriteAll
+                                  fff821b0  fff821d3        24
+  _R_IO_PORT_WriteAll
+                                  fff821b0        24   func ,g        28
+FILE=R_IO_PORT_WriteRegisterAll
+                                  fff821d4  fff821e1         e
+  _R_IO_PORT_WriteRegisterAll
+                                  fff821d4         e   func ,g         6
+FILE=utilities_ADC_10
+                                  fff821e2  fff82239        58
+  _rpdl_ADC_10_Start
+                                  fff821e2        19   func ,g         2
+  _rpdl_ADC_10_ModifyIEN
+                                  fff821fb        3f   func ,g         3
+FILE=utilities_CMT
+                                  fff8223a  fff82303        ca
+  _rpdl_CMT_ModifyIEN
+                                  fff8223a        7a   func ,g         6
+  _rpdl_CMT_WriteCMCR
+                                  fff822b4        50   func ,g         4
+
+SECTION=FIXEDVECT
+FILE=.\src\AP_pdg\i_src\Interrupt_INTC.obj
+                                  ffffffd0  ffffffff        30
+  _Fixed_Vectors
+                                  ffffffd0        30   data ,g         0
+
+*** Unfilled Areas ***
+
+AREA                                START    END
+
+*** Delete Symbols ***
+
+SYMBOL                                SIZE    INFO

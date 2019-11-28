@@ -1,0 +1,11 @@
+src/common/sm1.obj src/common/sm1.d: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm1.c
+src/common/sm1.obj src/common/sm1.d: C:\PROGRA~2\Renesas\RX\2_7_0\include\builtin.h
+C:\PROGRA~2\Renesas\RX\2_7_0\include\builtin.h:
+src/common/sm1.obj src/common/sm1.d: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm1.h
+C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm1.h:
+src/common/sm1.obj src/common/sm1.d: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm.h
+C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm.h:
+src/common/sm1.obj src/common/sm1.d: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/datatypes.h
+C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/datatypes.h:
+src/common/sm1.obj src/common/sm1.d: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/hal.h
+C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/hal.h:

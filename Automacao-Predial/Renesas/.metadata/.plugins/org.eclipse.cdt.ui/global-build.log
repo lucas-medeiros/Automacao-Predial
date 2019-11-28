@@ -1,0 +1,456 @@
+09:18:12 **** Build of configuration HardwareDebug for project AP_Renesas ****
+make -j4 all 
+'Scanning and building file: ../src/dbsct.c'
+'Scanning and building file: ../src/AP_Renesas.c'
+'Scanning and building file: ../src/hal.c'
+'Invoking: Scanner and Compiler'
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/AP_Renesas.d" -MT="src/AP_Renesas.obj" -MT="src/AP_Renesas.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_Renesas.c"
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/dbsct.d" -MT="src/dbsct.obj" -MT="src/dbsct.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "../src/dbsct.c"
+ccrx  -MM -MP -output=dep="src/hal.d" -MT="src/hal.obj" -MT="src/hal.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "../src/hal.c"
+'Scanning and building file: ../src/interrupt_handlers.c'
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/interrupt_handlers.d" -MT="src/interrupt_handlers.obj" -MT="src/interrupt_handlers.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "../src/interrupt_handlers.c"
+ccrx -lang=c -output=obj="src/AP_Renesas.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_Renesas.c"
+ccrx -lang=c -output=obj="src/hal.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "../src/hal.c"
+ccrx -lang=c -output=obj="src/dbsct.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "../src/dbsct.c"
+ccrx -lang=c -output=obj="src/interrupt_handlers.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "../src/interrupt_handlers.c"
+'Finished scanning and building: ../src/AP_Renesas.c'
+'Finished scanning and building: ../src/hal.c'
+'Finished scanning and building: ../src/dbsct.c'
+'Finished scanning and building: ../src/interrupt_handlers.c'
+
+
+
+
+'Scanning and building file: ../src/reset_program.c'
+'Scanning and building file: ../src/sbrk.c'
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/reset_program.d" -MT="src/reset_program.obj" -MT="src/reset_program.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "../src/reset_program.c"
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/sbrk.d" -MT="src/sbrk.obj" -MT="src/sbrk.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "../src/sbrk.c"
+ccrx -lang=c -output=obj="src/reset_program.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "../src/reset_program.c"
+'Scanning and building file: ../src/vector_table.c'
+ccrx -lang=c -output=obj="src/sbrk.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "../src/sbrk.c"
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/vector_table.d" -MT="src/vector_table.obj" -MT="src/vector_table.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "../src/vector_table.c"
+'Scanning and building file: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/behavior.c'
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/common/behavior.d" -MT="src/common/behavior.obj" -MT="src/common/behavior.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/behavior.c"
+ccrx -lang=c -output=obj="src/vector_table.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "../src/vector_table.c"
+ccrx -lang=c -output=obj="src/common/behavior.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/behavior.c"
+'Finished scanning and building: ../src/reset_program.c'
+
+'Finished scanning and building: ../src/sbrk.c'
+'Scanning and building file: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/chronometer.c'
+
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/common/chronometer.d" -MT="src/common/chronometer.obj" -MT="src/common/chronometer.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/chronometer.c"
+'Scanning and building file: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm1.c'
+'Finished scanning and building: ../src/vector_table.c'
+'Invoking: Scanner and Compiler'
+ccrx -lang=c -output=obj="src/common/chronometer.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/chronometer.c"
+'Finished scanning and building: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/behavior.c'
+ccrx  -MM -MP -output=dep="src/common/sm1.d" -MT="src/common/sm1.obj" -MT="src/common/sm1.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm1.c"
+
+
+'Scanning and building file: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm2.c'
+ccrx -lang=c -output=obj="src/common/sm1.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm1.c"
+'Scanning and building file: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm3.c'
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/common/sm2.d" -MT="src/common/sm2.obj" -MT="src/common/sm2.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm2.c"
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/common/sm3.d" -MT="src/common/sm3.obj" -MT="src/common/sm3.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm3.c"
+ccrx -lang=c -output=obj="src/common/sm2.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm2.c"
+ccrx -lang=c -output=obj="src/common/sm3.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm3.c"
+C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/chronometer.h(6):W0520301:Typedef name has already been declared (with same type)
+'Finished scanning and building: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/chronometer.c'
+
+'Scanning and building file: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm4.c'
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/common/sm4.d" -MT="src/common/sm4.obj" -MT="src/common/sm4.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm4.c"
+'Finished scanning and building: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm1.c'
+ccrx -lang=c -output=obj="src/common/sm4.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include"  -debug -isa=rxv1 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm4.c"
+
+'Invoking: Standard Library'
+lbgrx -head=runtime,stdio,stdlib,string,new -isa=rxv1 -fpu -output="AP_Renesas.lib"
+'Finished scanning and building: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm2.c'
+
+RX Family C/C++ Standard Library Generator V2.07.00.01 [07 Apr 2017]
+Copyright (C) 2008, 2017 Renesas Electronics Corporation
+All rights reserved.
+
+'Finished scanning and building: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm3.c'
+
+
+'Finished scanning and building: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm4.c'
+
+Library Generator Completed
+'Finished building:'
+
+'Invoking: Linker'
+'Building target:'
+rlink  -subcommand="LinkerSubCommand.tmp"  -library="C:\temp\Lucas\AUTOMA~1\AUTOMA~1\Renesas\AP_REN~1\HARDWA~2\AP_Renesas.lib" -noprelink -list="AP_Renesas.map" -show -nooptimize -debug -output="C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\HardwareDebug\AP_Renesas.abs" -rom=D=R,D_1=R_1,D_2=R_2 -nocompress -nomessage -nologo
+
+W0561017:The evaluation period has expired
+
+Renesas Optimizing Linker Completed
+'Finished building:'
+
+'Invoking: Converter'
+rlink   "C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\HardwareDebug\AP_Renesas.abs" -form=stype  -output="C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\HardwareDebug\AP_Renesas.mot"
+
+Renesas Optimizing Linker W2.07.00  [16 May 2017]
+   Copyright (C) 2011, 2017 Renesas Electronics Corporation
+
+W0561017:The evaluation period has expired
+
+Renesas Optimizing Linker Completed
+'Finished building target:'
+
+make --no-print-directory post-build
+
+C:\e2\DEBUGC~1\RX\RX_CON~1.EXE AP_Renesas.abs AP_Renesas.x
+Loading input file AP_Renesas.abs
+Parsing the ELF input file.....
+27 segments required LMA fixes
+Converting the DWARF information....
+Constructing the output ELF image....
+Saving the ELF output file AP_Renesas.x
+
+'Build complete.'
+09:51:59 **** Clean-only build of configuration HardwareDebug for project AP_Renesas ****
+make -j4 clean 
+rm -rf *.sni *.dbg *.lst *.lis *.lpp *.map *.x *.lbp src/*.src src/*.p src/*.pp src/*.mrc *.bls *.libelf *.lbk *.abs *.fsy  AP_Renesas.lib   AP_Renesas.mot  
+rm -rf "src"/*.obj "src"/*.d "src"/*.src "src"/*.p "src"/*.pp "src"/*.mrc "src"/*.prn
+rm -rf "src/common"/*.obj "src/common"/*.d "src/common"/*.src "src/common"/*.p "src/common"/*.pp "src/common"/*.mrc "src/common"/*.prn
+
+'Clean complete.'
+09:52:00 **** Incremental Build of configuration HardwareDebug for project AP_Renesas ****
+make -j4 all 
+'Scanning and building file: ../src/AP_Renesas.c'
+'Scanning and building file: ../src/dbsct.c'
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/AP_Renesas.d" -MT="src/AP_Renesas.obj" -MT="src/AP_Renesas.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_Renesas.c"
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/dbsct.d" -MT="src/dbsct.obj" -MT="src/dbsct.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/dbsct.c"
+'Scanning and building file: ../src/hal.c'
+ccrx -lang=c -output=obj="src/AP_Renesas.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_Renesas.c"
+'Scanning and building file: ../src/reset_program.c'
+ccrx -lang=c -output=obj="src/dbsct.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/dbsct.c"
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/hal.d" -MT="src/hal.obj" -MT="src/hal.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/hal.c"
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/reset_program.d" -MT="src/reset_program.obj" -MT="src/reset_program.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/reset_program.c"
+ccrx -lang=c -output=obj="src/hal.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/hal.c"
+ccrx -lang=c -output=obj="src/reset_program.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/reset_program.c"
+'Finished scanning and building: ../src/dbsct.c'
+'Finished scanning and building: ../src/AP_Renesas.c'
+
+
+'Scanning and building file: ../src/sbrk.c'
+'Scanning and building file: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/behavior.c'
+'Finished scanning and building: ../src/reset_program.c'
+'Finished scanning and building: ../src/hal.c'
+'Invoking: Scanner and Compiler'
+'Invoking: Scanner and Compiler'
+
+ccrx  -MM -MP -output=dep="src/sbrk.d" -MT="src/sbrk.obj" -MT="src/sbrk.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/sbrk.c"
+
+ccrx  -MM -MP -output=dep="src/common/behavior.d" -MT="src/common/behavior.obj" -MT="src/common/behavior.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/behavior.c"
+'Scanning and building file: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/chronometer.c'
+ccrx -lang=c -output=obj="src/sbrk.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/sbrk.c"
+ccrx -lang=c -output=obj="src/common/behavior.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/behavior.c"
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/common/chronometer.d" -MT="src/common/chronometer.obj" -MT="src/common/chronometer.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/chronometer.c"
+'Scanning and building file: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm1.c'
+ccrx -lang=c -output=obj="src/common/chronometer.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/chronometer.c"
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/common/sm1.d" -MT="src/common/sm1.obj" -MT="src/common/sm1.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm1.c"
+ccrx -lang=c -output=obj="src/common/sm1.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm1.c"
+'Finished scanning and building: ../src/sbrk.c'
+'Finished scanning and building: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/behavior.c'
+
+
+'Scanning and building file: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm2.c'
+'Finished scanning and building: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/chronometer.c'
+'Invoking: Scanner and Compiler'
+
+ccrx  -MM -MP -output=dep="src/common/sm2.d" -MT="src/common/sm2.obj" -MT="src/common/sm2.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm2.c"
+'Finished scanning and building: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm1.c'
+
+ccrx -lang=c -output=obj="src/common/sm2.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm2.c"
+'Scanning and building file: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm3.c'
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/common/sm3.d" -MT="src/common/sm3.obj" -MT="src/common/sm3.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm3.c"
+'Scanning and building file: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm4.c'
+C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/chronometer.h(6):W0520301:Typedef name has already been declared (with same type)
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/common/sm4.d" -MT="src/common/sm4.obj" -MT="src/common/sm4.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm4.c"
+'Scanning and building file: ../src/AP_pdg/i_src/Interrupt_CMT.c'
+ccrx -lang=c -output=obj="src/common/sm3.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm3.c"
+ccrx -lang=c -output=obj="src/common/sm4.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm4.c"
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/AP_pdg/i_src/Interrupt_CMT.d" -MT="src/AP_pdg/i_src/Interrupt_CMT.obj" -MT="src/AP_pdg/i_src/Interrupt_CMT.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/i_src/Interrupt_CMT.c"
+ccrx -lang=c -output=obj="src/AP_pdg/i_src/Interrupt_CMT.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/i_src/Interrupt_CMT.c"
+'Finished scanning and building: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm2.c'
+
+'Scanning and building file: ../src/AP_pdg/i_src/Interrupt_INTC.c'
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/AP_pdg/i_src/Interrupt_INTC.d" -MT="src/AP_pdg/i_src/Interrupt_INTC.obj" -MT="src/AP_pdg/i_src/Interrupt_INTC.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/i_src/Interrupt_INTC.c"
+'Finished scanning and building: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm3.c'
+ccrx -lang=c -output=obj="src/AP_pdg/i_src/Interrupt_INTC.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/i_src/Interrupt_INTC.c"
+'Finished scanning and building: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm4.c'
+
+
+'Scanning and building file: ../src/AP_pdg/SYSTEM/R_PG_Clock.c'
+'Scanning and building file: ../src/AP_pdg/IO/R_PG_IO_PORT_P0.c'
+'Invoking: Scanner and Compiler'
+'Finished scanning and building: ../src/AP_pdg/i_src/Interrupt_CMT.c'
+ccrx  -MM -MP -output=dep="src/AP_pdg/SYSTEM/R_PG_Clock.d" -MT="src/AP_pdg/SYSTEM/R_PG_Clock.obj" -MT="src/AP_pdg/SYSTEM/R_PG_Clock.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/SYSTEM/R_PG_Clock.c"
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/AP_pdg/IO/R_PG_IO_PORT_P0.d" -MT="src/AP_pdg/IO/R_PG_IO_PORT_P0.obj" -MT="src/AP_pdg/IO/R_PG_IO_PORT_P0.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/IO/R_PG_IO_PORT_P0.c"
+
+ccrx -lang=c -output=obj="src/AP_pdg/SYSTEM/R_PG_Clock.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/SYSTEM/R_PG_Clock.c"
+'Scanning and building file: ../src/AP_pdg/IO/R_PG_IO_PORT_P2.c'
+ccrx -lang=c -output=obj="src/AP_pdg/IO/R_PG_IO_PORT_P0.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/IO/R_PG_IO_PORT_P0.c"
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/AP_pdg/IO/R_PG_IO_PORT_P2.d" -MT="src/AP_pdg/IO/R_PG_IO_PORT_P2.obj" -MT="src/AP_pdg/IO/R_PG_IO_PORT_P2.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/IO/R_PG_IO_PORT_P2.c"
+ccrx -lang=c -output=obj="src/AP_pdg/IO/R_PG_IO_PORT_P2.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/IO/R_PG_IO_PORT_P2.c"
+'Finished scanning and building: ../src/AP_pdg/i_src/Interrupt_INTC.c'
+
+'Scanning and building file: ../src/AP_pdg/IO/R_PG_IO_PORT_P4.c'
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/AP_pdg/IO/R_PG_IO_PORT_P4.d" -MT="src/AP_pdg/IO/R_PG_IO_PORT_P4.obj" -MT="src/AP_pdg/IO/R_PG_IO_PORT_P4.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/IO/R_PG_IO_PORT_P4.c"
+'Finished scanning and building: ../src/AP_pdg/SYSTEM/R_PG_Clock.c'
+ccrx -lang=c -output=obj="src/AP_pdg/IO/R_PG_IO_PORT_P4.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/IO/R_PG_IO_PORT_P4.c"
+'Finished scanning and building: ../src/AP_pdg/IO/R_PG_IO_PORT_P0.c'
+
+
+'Scanning and building file: ../src/AP_pdg/IO/R_PG_IO_PORT_P5.c'
+'Scanning and building file: ../src/AP_pdg/IO/R_PG_IO_PORT_PA.c'
+'Finished scanning and building: ../src/AP_pdg/IO/R_PG_IO_PORT_P2.c'
+'Invoking: Scanner and Compiler'
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/AP_pdg/IO/R_PG_IO_PORT_P5.d" -MT="src/AP_pdg/IO/R_PG_IO_PORT_P5.obj" -MT="src/AP_pdg/IO/R_PG_IO_PORT_P5.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/IO/R_PG_IO_PORT_P5.c"
+
+ccrx  -MM -MP -output=dep="src/AP_pdg/IO/R_PG_IO_PORT_PA.d" -MT="src/AP_pdg/IO/R_PG_IO_PORT_PA.obj" -MT="src/AP_pdg/IO/R_PG_IO_PORT_PA.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/IO/R_PG_IO_PORT_PA.c"
+ccrx -lang=c -output=obj="src/AP_pdg/IO/R_PG_IO_PORT_P5.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/IO/R_PG_IO_PORT_P5.c"
+'Scanning and building file: ../src/AP_pdg/IO/R_PG_IO_PORT_PD.c'
+ccrx -lang=c -output=obj="src/AP_pdg/IO/R_PG_IO_PORT_PA.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/IO/R_PG_IO_PORT_PA.c"
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/AP_pdg/IO/R_PG_IO_PORT_PD.d" -MT="src/AP_pdg/IO/R_PG_IO_PORT_PD.obj" -MT="src/AP_pdg/IO/R_PG_IO_PORT_PD.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/IO/R_PG_IO_PORT_PD.c"
+ccrx -lang=c -output=obj="src/AP_pdg/IO/R_PG_IO_PORT_PD.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/IO/R_PG_IO_PORT_PD.c"
+'Finished scanning and building: ../src/AP_pdg/IO/R_PG_IO_PORT_P4.c'
+
+'Scanning and building file: ../src/AP_pdg/CMT/R_PG_Timer_CMT_U0.c'
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/AP_pdg/CMT/R_PG_Timer_CMT_U0.d" -MT="src/AP_pdg/CMT/R_PG_Timer_CMT_U0.obj" -MT="src/AP_pdg/CMT/R_PG_Timer_CMT_U0.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/CMT/R_PG_Timer_CMT_U0.c"
+ccrx -lang=c -output=obj="src/AP_pdg/CMT/R_PG_Timer_CMT_U0.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/CMT/R_PG_Timer_CMT_U0.c"
+'Finished scanning and building: ../src/AP_pdg/IO/R_PG_IO_PORT_P5.c'
+'Finished scanning and building: ../src/AP_pdg/IO/R_PG_IO_PORT_PA.c'
+
+
+'Invoking: Standard Library'
+lbgrx -head=runtime,stdio,stdlib,string,new -isa=rxv1 -dbl_size=8 -fpu -output="AP_Renesas.lib"
+'Finished scanning and building: ../src/AP_pdg/IO/R_PG_IO_PORT_PD.c'
+
+RX Family C/C++ Standard Library Generator V2.07.00.01 [07 Apr 2017]
+Copyright (C) 2008, 2017 Renesas Electronics Corporation
+All rights reserved.
+
+
+'Finished scanning and building: ../src/AP_pdg/CMT/R_PG_Timer_CMT_U0.c'
+
+Library Generator Completed
+'Finished building:'
+
+'Invoking: Linker'
+'Building target:'
+rlink  -subcommand="LinkerSubCommand.tmp"  -library="C:\temp\Lucas\AUTOMA~1\AUTOMA~1\Renesas\AP_REN~1\HARDWA~2\AP_Renesas.lib" -library="C:\Renesas\PDG2\lib\RX62N\RX62N_library_100_little.lib" -noprelink -list="AP_Renesas.map" -show -nooptimize -debug -output="C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\HardwareDebug\AP_Renesas.abs" -rom=D=R,D_1=R_1,D_2=R_2 -nocompress -nomessage -nologo
+
+W0561017:The evaluation period has expired
+
+Renesas Optimizing Linker Completed
+'Finished building:'
+
+'Invoking: Converter'
+rlink   "C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\HardwareDebug\AP_Renesas.abs" -form=stype  -output="C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\HardwareDebug\AP_Renesas.mot"
+
+Renesas Optimizing Linker W2.07.00  [16 May 2017]
+   Copyright (C) 2011, 2017 Renesas Electronics Corporation
+
+W0561017:The evaluation period has expired
+
+Renesas Optimizing Linker Completed
+'Finished building target:'
+
+make --no-print-directory post-build
+
+C:\e2\DEBUGC~1\RX\RX_CON~1.EXE AP_Renesas.abs AP_Renesas.x
+Loading input file AP_Renesas.abs
+Parsing the ELF input file.....
+26 segments required LMA fixes
+Converting the DWARF information....
+Constructing the output ELF image....
+Saving the ELF output file AP_Renesas.x
+
+'Build complete.'
+10:10:49 **** Incremental Build of configuration HardwareDebug for project AP_Renesas ****
+make -j4 all 
+'Scanning and building file: ../src/AP_Renesas.c'
+'Scanning and building file: ../src/hal.c'
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/AP_Renesas.d" -MT="src/AP_Renesas.obj" -MT="src/AP_Renesas.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_Renesas.c"
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/hal.d" -MT="src/hal.obj" -MT="src/hal.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/hal.c"
+'Scanning and building file: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/behavior.c'
+'Scanning and building file: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/chronometer.c'
+ccrx -lang=c -output=obj="src/AP_Renesas.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_Renesas.c"
+'Invoking: Scanner and Compiler'
+ccrx -lang=c -output=obj="src/hal.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/hal.c"
+ccrx  -MM -MP -output=dep="src/common/behavior.d" -MT="src/common/behavior.obj" -MT="src/common/behavior.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/behavior.c"
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/common/chronometer.d" -MT="src/common/chronometer.obj" -MT="src/common/chronometer.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/chronometer.c"
+ccrx -lang=c -output=obj="src/common/chronometer.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/chronometer.c"
+ccrx -lang=c -output=obj="src/common/behavior.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/behavior.c"
+'Finished scanning and building: ../src/AP_Renesas.c'
+
+'Finished scanning and building: ../src/hal.c'
+'Scanning and building file: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm1.c'
+
+'Invoking: Scanner and Compiler'
+'Finished scanning and building: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/chronometer.c'
+ccrx  -MM -MP -output=dep="src/common/sm1.d" -MT="src/common/sm1.obj" -MT="src/common/sm1.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm1.c"
+'Finished scanning and building: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/behavior.c'
+
+ccrx -lang=c -output=obj="src/common/sm1.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm1.c"
+
+'Scanning and building file: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm2.c'
+'Scanning and building file: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm3.c'
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/common/sm2.d" -MT="src/common/sm2.obj" -MT="src/common/sm2.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm2.c"
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/common/sm3.d" -MT="src/common/sm3.obj" -MT="src/common/sm3.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm3.c"
+ccrx -lang=c -output=obj="src/common/sm2.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm2.c"
+'Scanning and building file: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm4.c'
+ccrx -lang=c -output=obj="src/common/sm3.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm3.c"
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/common/sm4.d" -MT="src/common/sm4.obj" -MT="src/common/sm4.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm4.c"
+C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/chronometer.h(6):W0520301:Typedef name has already been declared (with same type)
+'Finished scanning and building: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm1.c'
+ccrx -lang=c -output=obj="src/common/sm4.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm4.c"
+
+'Scanning and building file: ../src/AP_pdg/i_src/Interrupt_ADC_10.c'
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/AP_pdg/i_src/Interrupt_ADC_10.d" -MT="src/AP_pdg/i_src/Interrupt_ADC_10.obj" -MT="src/AP_pdg/i_src/Interrupt_ADC_10.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/i_src/Interrupt_ADC_10.c"
+'Finished scanning and building: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm2.c'
+'Finished scanning and building: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm3.c'
+
+
+'Scanning and building file: ../src/AP_pdg/i_src/Interrupt_CMT.c'
+'Scanning and building file: ../src/AP_pdg/i_src/Interrupt_INTC.c'
+'Finished scanning and building: C:/temp/Lucas/Automacao-Predial-master/Automacao-Predial/common/sm4.c'
+'Invoking: Scanner and Compiler'
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/AP_pdg/i_src/Interrupt_CMT.d" -MT="src/AP_pdg/i_src/Interrupt_CMT.obj" -MT="src/AP_pdg/i_src/Interrupt_CMT.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/i_src/Interrupt_CMT.c"
+
+ccrx  -MM -MP -output=dep="src/AP_pdg/i_src/Interrupt_INTC.d" -MT="src/AP_pdg/i_src/Interrupt_INTC.obj" -MT="src/AP_pdg/i_src/Interrupt_INTC.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/i_src/Interrupt_INTC.c"
+'Scanning and building file: ../src/AP_pdg/SYSTEM/R_PG_Clock.c'
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/AP_pdg/SYSTEM/R_PG_Clock.d" -MT="src/AP_pdg/SYSTEM/R_PG_Clock.obj" -MT="src/AP_pdg/SYSTEM/R_PG_Clock.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/SYSTEM/R_PG_Clock.c"
+ccrx -lang=c -output=obj="src/AP_pdg/SYSTEM/R_PG_Clock.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/SYSTEM/R_PG_Clock.c"
+ccrx -lang=c -output=obj="src/AP_pdg/i_src/Interrupt_CMT.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/i_src/Interrupt_CMT.c"
+ccrx -lang=c -output=obj="src/AP_pdg/i_src/Interrupt_ADC_10.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/i_src/Interrupt_ADC_10.c"
+ccrx -lang=c -output=obj="src/AP_pdg/i_src/Interrupt_INTC.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/i_src/Interrupt_INTC.c"
+'Finished scanning and building: ../src/AP_pdg/SYSTEM/R_PG_Clock.c'
+
+'Scanning and building file: ../src/AP_pdg/IO/R_PG_IO_PORT_P0.c'
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/AP_pdg/IO/R_PG_IO_PORT_P0.d" -MT="src/AP_pdg/IO/R_PG_IO_PORT_P0.obj" -MT="src/AP_pdg/IO/R_PG_IO_PORT_P0.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/IO/R_PG_IO_PORT_P0.c"
+'Finished scanning and building: ../src/AP_pdg/i_src/Interrupt_CMT.c'
+'Finished scanning and building: ../src/AP_pdg/i_src/Interrupt_ADC_10.c'
+ccrx -lang=c -output=obj="src/AP_pdg/IO/R_PG_IO_PORT_P0.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/IO/R_PG_IO_PORT_P0.c"
+'Finished scanning and building: ../src/AP_pdg/i_src/Interrupt_INTC.c'
+
+
+
+'Scanning and building file: ../src/AP_pdg/IO/R_PG_IO_PORT_P2.c'
+'Scanning and building file: ../src/AP_pdg/IO/R_PG_IO_PORT_P4.c'
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/AP_pdg/IO/R_PG_IO_PORT_P2.d" -MT="src/AP_pdg/IO/R_PG_IO_PORT_P2.obj" -MT="src/AP_pdg/IO/R_PG_IO_PORT_P2.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/IO/R_PG_IO_PORT_P2.c"
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/AP_pdg/IO/R_PG_IO_PORT_P4.d" -MT="src/AP_pdg/IO/R_PG_IO_PORT_P4.obj" -MT="src/AP_pdg/IO/R_PG_IO_PORT_P4.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/IO/R_PG_IO_PORT_P4.c"
+ccrx -lang=c -output=obj="src/AP_pdg/IO/R_PG_IO_PORT_P2.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/IO/R_PG_IO_PORT_P2.c"
+'Scanning and building file: ../src/AP_pdg/IO/R_PG_IO_PORT_P5.c'
+ccrx -lang=c -output=obj="src/AP_pdg/IO/R_PG_IO_PORT_P4.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/IO/R_PG_IO_PORT_P4.c"
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/AP_pdg/IO/R_PG_IO_PORT_P5.d" -MT="src/AP_pdg/IO/R_PG_IO_PORT_P5.obj" -MT="src/AP_pdg/IO/R_PG_IO_PORT_P5.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/IO/R_PG_IO_PORT_P5.c"
+ccrx -lang=c -output=obj="src/AP_pdg/IO/R_PG_IO_PORT_P5.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/IO/R_PG_IO_PORT_P5.c"
+'Finished scanning and building: ../src/AP_pdg/IO/R_PG_IO_PORT_P0.c'
+
+'Scanning and building file: ../src/AP_pdg/IO/R_PG_IO_PORT_PA.c'
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/AP_pdg/IO/R_PG_IO_PORT_PA.d" -MT="src/AP_pdg/IO/R_PG_IO_PORT_PA.obj" -MT="src/AP_pdg/IO/R_PG_IO_PORT_PA.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/IO/R_PG_IO_PORT_PA.c"
+ccrx -lang=c -output=obj="src/AP_pdg/IO/R_PG_IO_PORT_PA.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/IO/R_PG_IO_PORT_PA.c"
+'Finished scanning and building: ../src/AP_pdg/IO/R_PG_IO_PORT_P2.c'
+
+'Finished scanning and building: ../src/AP_pdg/IO/R_PG_IO_PORT_P4.c'
+'Scanning and building file: ../src/AP_pdg/IO/R_PG_IO_PORT_PD.c'
+
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/AP_pdg/IO/R_PG_IO_PORT_PD.d" -MT="src/AP_pdg/IO/R_PG_IO_PORT_PD.obj" -MT="src/AP_pdg/IO/R_PG_IO_PORT_PD.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/IO/R_PG_IO_PORT_PD.c"
+'Finished scanning and building: ../src/AP_pdg/IO/R_PG_IO_PORT_P5.c'
+
+ccrx -lang=c -output=obj="src/AP_pdg/IO/R_PG_IO_PORT_PD.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/IO/R_PG_IO_PORT_PD.c"
+'Scanning and building file: ../src/AP_pdg/CMT/R_PG_Timer_CMT_U0.c'
+'Invoking: Scanner and Compiler'
+ccrx  -MM -MP -output=dep="src/AP_pdg/CMT/R_PG_Timer_CMT_U0.d" -MT="src/AP_pdg/CMT/R_PG_Timer_CMT_U0.obj" -MT="src/AP_pdg/CMT/R_PG_Timer_CMT_U0.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/CMT/R_PG_Timer_CMT_U0.c"
+'Scanning and building file: ../src/AP_pdg/AD_10/R_PG_ADC_10_AD0.c'
+'Invoking: Scanner and Compiler'
+ccrx -lang=c -output=obj="src/AP_pdg/CMT/R_PG_Timer_CMT_U0.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/CMT/R_PG_Timer_CMT_U0.c"
+ccrx  -MM -MP -output=dep="src/AP_pdg/AD_10/R_PG_ADC_10_AD0.d" -MT="src/AP_pdg/AD_10/R_PG_ADC_10_AD0.obj" -MT="src/AP_pdg/AD_10/R_PG_ADC_10_AD0.d" -lang=c   -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/AD_10/R_PG_ADC_10_AD0.c"
+'Finished scanning and building: ../src/AP_pdg/IO/R_PG_IO_PORT_PA.c'
+
+ccrx -lang=c -output=obj="src/AP_pdg/AD_10/R_PG_ADC_10_AD0.obj"  -include="C:\PROGRA~2\Renesas\RX\2_7_0/include","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg","C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\src\AP_pdg\i_src"  -debug -isa=rxv1 -dbl_size=8 -fpu -alias=noansi -nologo  -define=__RX   "../src/AP_pdg/AD_10/R_PG_ADC_10_AD0.c"
+'Finished scanning and building: ../src/AP_pdg/IO/R_PG_IO_PORT_PD.c'
+
+'Finished scanning and building: ../src/AP_pdg/CMT/R_PG_Timer_CMT_U0.c'
+
+'Finished scanning and building: ../src/AP_pdg/AD_10/R_PG_ADC_10_AD0.c'
+
+'Invoking: Linker'
+'Building target:'
+rlink  -subcommand="LinkerSubCommand.tmp"  -library="C:\temp\Lucas\AUTOMA~1\AUTOMA~1\Renesas\AP_REN~1\HARDWA~2\AP_Renesas.lib" -library="C:\Renesas\PDG2\lib\RX62N\RX62N_library_100_little.lib" -noprelink -list="AP_Renesas.map" -show -nooptimize -debug -output="C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\HardwareDebug\AP_Renesas.abs" -rom=D=R,D_1=R_1,D_2=R_2 -nocompress -nomessage -nologo
+
+W0561017:The evaluation period has expired
+
+Renesas Optimizing Linker Completed
+'Finished building:'
+
+'Invoking: Converter'
+rlink   "C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\HardwareDebug\AP_Renesas.abs" -form=stype  -output="C:\temp\Lucas\Automacao-Predial-master\Automacao-Predial\Renesas\AP_Renesas\HardwareDebug\AP_Renesas.mot"
+
+Renesas Optimizing Linker W2.07.00  [16 May 2017]
+   Copyright (C) 2011, 2017 Renesas Electronics Corporation
+
+W0561017:The evaluation period has expired
+
+Renesas Optimizing Linker Completed
+'Finished building target:'
+
+make --no-print-directory post-build
+
+C:\e2\DEBUGC~1\RX\RX_CON~1.EXE AP_Renesas.abs AP_Renesas.x
+Loading input file AP_Renesas.abs
+Parsing the ELF input file.....
+26 segments required LMA fixes
+Converting the DWARF information....
+Constructing the output ELF image....
+Saving the ELF output file AP_Renesas.x
+
+'Build complete.'
+10:12:09 **** Incremental Build of configuration HardwareDebug for project AP_Renesas ****
+make -j4 all 
+'Build complete.'

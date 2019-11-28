@@ -1,0 +1,4 @@
+com.renesas.cdt.rxc.Debug.Assembler.option.endian=Little-endian data
+com.renesas.cdt.rxc.Debug.Compiler.option.cpuType=RX600
+com.renesas.cdt.rxc.Debug.Compiler.option.endian=Little-endian data
+eclipse.preferences.version=1

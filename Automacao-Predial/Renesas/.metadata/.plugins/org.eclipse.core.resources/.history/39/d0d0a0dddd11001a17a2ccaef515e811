@@ -1,0 +1,53 @@
+#include "../../../common/hal.h"
+
+void InitHAL(){
+
+}
+
+uint32 Now(){
+	return 0;
+}
+
+boolean s11(){
+	return 0;
+}
+
+boolean s12(){
+	return 0;
+}
+
+boolean s21(){
+	return 0;
+}
+
+boolean s22(){
+	return 0;
+}
+
+boolean s31(){
+	return 0;
+}
+
+boolean s32(){
+	return 0;
+}
+
+int32 lerTemperaturaTanque3(){
+	return 0;
+}
+
+void v1(boolean state){
+
+}
+
+void b1(boolean state){
+
+}
+
+void v2(boolean state){
+
+}
+
+void r1(boolean state){
+
+}
