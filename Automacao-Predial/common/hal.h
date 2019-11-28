@@ -6,6 +6,9 @@
 void InitHAL();
 uint32 Now();
 
+void Cmt0IntFunc();
+void Ad0IntFunc();
+
 boolean s11();
 boolean s12();
 boolean s21();
