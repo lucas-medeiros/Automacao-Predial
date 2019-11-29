@@ -52,7 +52,9 @@ boolean s22(){
 }
 
 boolean s31(){
-	return 0;
+	unsigned char v;
+	R_PG_IO_PORT_Read_PD0(&v);
+	return v;
 }
 
 boolean s32(){
